@@ -1,0 +1,23 @@
+{
+  "name": "@fengkx/my-leetcode",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengkx/leetcode.git"
+  },
+  "author": "fengkx",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/fengkx/leetcode/issues"
+  },
+  "homepage": "https://github.com/fengkx/leetcode#readme",
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "typescript-expect-plugin": "^0.3.1"
+  }
+}
