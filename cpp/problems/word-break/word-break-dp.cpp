@@ -4,18 +4,18 @@ class Solution {
  public:
   bool wordBreak(string s, vector<string>& wordDict) {
     unordered_set<string> d;
-    int maxLen = 0;
+    size_t maxLen = 0;
     for (auto w : wordDict) {
       d.insert(w);
-      maxLen = max(maxLen, (int)w.size());
+      maxLen = max(maxLen, w.size());
     }
 
     unordered_set<string>::iterator dt;
     vector<bool> m(s.size() + 1);
     m[0] = true;
 
-    for (int hi = 1; hi <= s.size(); ++hi) {
-      for (int i = hi - 1; i >= 0; --i) {
+    for (size_t hi = 1; hi <= s.size(); ++hi) {
+      for (size_t i = hi - 1; i >= 0; --i) {
         if (hi - i > maxLen) continue;
         dt = d.find(s.substr(i, hi - i));
         if (m[i] && dt != d.end()) {
