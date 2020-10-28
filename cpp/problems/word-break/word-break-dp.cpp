@@ -15,8 +15,8 @@ class Solution {
     m[0] = true;
 
     for (size_t hi = 1; hi <= s.size(); ++hi) {
-      for (size_t i = hi - 1; i >= 0; --i) {
-        if (hi - i > maxLen) continue;
+      for (size_t i = hi - 1; i >= 0 && i < s.size(); --i) {
+        if ((hi - i > maxLen)) continue;
         dt = d.find(s.substr(i, hi - i));
         if (m[i] && dt != d.end()) {
           m[hi] = true;
