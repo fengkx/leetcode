@@ -17,3 +17,10 @@ _deps
 build
 
 cpp/cpp_include/libleetcode.a
+
+#Rust
+
+*/target/
+*/bin/
+*/build/
+*/main
