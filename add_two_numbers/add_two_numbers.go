@@ -7,6 +7,12 @@ package add_two_numbers
  *     Next *ListNode
  * }
  */
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var ret *ListNode = new(ListNode)
 	p, q, r := l1, l2, ret

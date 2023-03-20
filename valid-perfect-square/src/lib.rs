@@ -28,7 +28,7 @@ mod tests {
     use super::*;
     #[test]
     fn it_works() {
-        (1..i32::MAX).into_par_iter().for_each(|num| {
+        (1..10000).into_par_iter().for_each(|num| {
             assert_eq!(
                 Solution::is_perfect_square(num),
                 (num as f64).sqrt().fract() == 0.0

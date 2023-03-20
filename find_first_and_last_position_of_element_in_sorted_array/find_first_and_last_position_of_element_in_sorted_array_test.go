@@ -2,6 +2,8 @@ package find_first_and_last_position_of_element_in_sorted_array
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func Test_searchRange(t *testing.T) {
@@ -24,8 +26,6 @@ func Test_searchRange(t *testing.T) {
 	}
 
 	for i := 0; i < len(expected); i++ {
-		if ret := searchRange(inputs[i], toFound[i]); ret[0] == expected[i][0] && ret[1] == expected[i][1] {
-			t.Fatalf("case %d failed\nactual: %d, expect: %d\n", i, ret, expected[i])
-		}
+		assert.Equal(t, expected[i], searchRange(inputs[i], toFound[i]))
 	}
 }

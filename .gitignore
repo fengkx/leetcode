@@ -24,3 +24,8 @@ cpp/cpp_include/libleetcode.a
 */bin/
 */build/
 */main
+
+# Added by cargo
+
+/target
+.turbo
