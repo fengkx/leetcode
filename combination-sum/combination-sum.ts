@@ -1,5 +1,3 @@
-import expect = require("expect");
-
 function combinationSum(candidates: number[], target: number): number[][] {
   candidates.sort((a, b) => a - b);
   function dfs(
@@ -25,17 +23,22 @@ function combinationSum(candidates: number[], target: number): number[][] {
   return results;
 }
 
-expect(new Set(combinationSum([2, 3, 6, 7], 7))).toEqual(
-  new Set([[2, 2, 3], [7]])
-);
-expect(new Set(combinationSum([2, 3, 5], 8))).toEqual(
-  new Set([
-    [2, 2, 2, 2],
-    [2, 3, 3],
-    [3, 5],
-  ])
-);
+if (import.meta.vitest) {
+  const { expect, it } = import.meta.vitest
+  it('pass', () => {
+    expect(new Set(combinationSum([2, 3, 6, 7], 7))).toEqual(
+      new Set([[2, 2, 3], [7]])
+    );
+    expect(new Set(combinationSum([2, 3, 5], 8))).toEqual(
+      new Set([
+        [2, 2, 2, 2],
+        [2, 3, 3],
+        [3, 5],
+      ])
+    );
 
+  })
+}
 /*
 target  start   path
 7   0   []
