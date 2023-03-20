@@ -1,3 +1,8 @@
 [workspace]
-members = ["implement_trie_prefix_tree", "swap-nodes-in-pairs", "valid-perfect-square"]
+members = [
+    "count-and-say",
+    "implement_trie_prefix_tree",
+    "swap-nodes-in-pairs",
+    "valid-perfect-square"
+]
 exclude = [".git", ".vscode"]
