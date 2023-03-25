@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "test:js": {
-      "inputs": ["./**/*.(t|j)sx?", "./vite.config.ts"],
+      "inputs": ["./**/*.ts", "./**/*.js", "./vite.config.ts"],
       "outputs": []
     },
     "watch:js": {
