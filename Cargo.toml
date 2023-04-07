@@ -3,6 +3,7 @@ members = [
     "count-and-say",
     "implement_trie_prefix_tree",
     "swap-nodes-in-pairs",
-    "valid-perfect-square"
+    "valid-perfect-square",
+    "rust/*"
 ]
 exclude = [".git", ".vscode"]
