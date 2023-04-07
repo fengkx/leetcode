@@ -142,6 +142,10 @@ name = "swap-nodes-in-pairs"
 version = "0.1.0"
 
 [[package]]
+name = "valid-anagram"
+version = "0.1.0"
+
+[[package]]
 name = "valid-perfect-square"
 version = "0.1.0"
 dependencies = [
