@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fengkx/leetcode#readme",
   "devDependencies": {
+    "turbo": "^1.13.2",
     "typescript": "^5.4.5",
     "typescript-expect-plugin": "^0.3.1",
     "vitest": "^1.5.0"
